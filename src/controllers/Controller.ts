@@ -12,6 +12,12 @@ export class Controller<TEntity extends IEntity> {
     if (data) {
       this.data = data;
     }
+
+    this.findAll();
+    this.findById();
+    this.insert();
+    this.delete();
+    this.update();
   }
 
   protected findAll() {
